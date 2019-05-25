@@ -19,7 +19,10 @@ async function getPersonajes() {
     var promesas = ids.map(id => obtenerPersonaje(id))
     try {
     var datosQueLlegan = await Promise.all(promesas)
-    console.log(datosQueLlegan)
+    var nombre = datosQueLlegan.map( n => n.name)
+    for (var i = 0; i < nombre.length; i++) {
+      console.log(nombre[i])
+    }
   } catch (id) {
     console.log("Llamando al personaje número " + id + " se fué todo a la verga")
   }
