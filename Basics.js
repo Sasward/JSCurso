@@ -35,7 +35,7 @@ function cumpleaños(persona){
 }
 
 function imprimirNombreYEdad(persona){
-  alert("Hola me llamo " + persona.nombre + " y tengo " + persona.edad + " años.")
+  alert(`Hola me llamo ${persona.nombre} y tengo ${persona.edad} años.`)
 }
 
 ultimaNombre(Sebas)
